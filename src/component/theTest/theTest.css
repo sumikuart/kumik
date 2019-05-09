@@ -1,0 +1,258 @@
+
+/* ------------------------------------------------Component StartTest: */
+
+.ComponentStart {
+    text-align: center;
+}
+
+.ComponentStart h2{
+ font-size:52px;
+ margin:30px;
+}
+
+.ComponentStart p{
+    font-size:18px;
+}
+
+.ComponentStart p.italic {
+font-style: italic;
+
+}
+
+
+.ComponentStart button{
+    width:10%;
+    height: 50px;
+    font-size:42px;
+    margin:30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ComponentStart button:hover{
+    background-color: rgba(255, 215, 246, 0.466);
+}
+
+
+.ComponentStart ul {
+    margin:15px;
+}
+.ComponentStart .moreInfo {
+    margin-bottom: 10px;
+}
+/* ------------------------------------------------Component DisplayTest: */
+
+.ComponentDisplayTest{
+    text-align: center;
+    width:100%;
+}
+
+.ComponentDisplayTest h2{
+    font-size:32px;
+    margin:30px;
+}
+
+.ComponentDisplayTest h3{
+    font-size:24px;
+    margin:30px;
+}
+
+.ComponentDisplayTest h4{
+    font-size:24px;
+    margin:30px;
+}
+
+.ComponentDisplayTest form {
+    margin:0 auto;
+    width:50%;
+
+}
+
+.ComponentDisplayTest form .optionForm {
+    text-align: left;
+    display:flex;
+    border:2px solid rgba(0, 0, 0, 0.40);
+    flex-wrap: wrap;
+    font-size: 27px;
+    width:100%;
+}
+
+
+.ComponentDisplayTest form .optionForm div {
+
+    width:50%;
+}
+
+.ComponentDisplayTest .optionDiv form button{
+   margin:30px;
+   height:50px;
+   width:40%;
+   font-size: 30px;
+   cursor: pointer;
+transition: 0.5s;
+}
+
+.ComponentDisplayTest .optionDiv form button:hover {
+background-color: rgba(255, 215, 246, 0.466);
+}
+
+
+/* SetUP Costum Checkbox: */
+.ComponentDisplayTest .costumCheckbox {
+    display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin:10px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.ComponentDisplayTest .costumCheckbox input {
+    position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.ComponentDisplayTest .costumCheckbox span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+}
+
+.ComponentDisplayTest .costumCheckbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .ComponentDisplayTest .costumCheckbox input:checked ~ .checkmark {
+    background-color: rgb(54, 8, 43);
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .ComponentDisplayTest .costumCheckbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .ComponentDisplayTest .costumCheckbox .checkmark:after {
+    left: 9px;
+    top: 2.5px;
+    width: 10px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  /* ------------------------------------------------Component Result: */
+
+
+.ComponentResult{
+      text-align: center;
+      width:100%;
+  }
+
+  
+.ComponentResult h2{
+    margin-bottom: 15px;
+}
+.ComponentResult p{
+
+   font-size: 24px;
+
+}
+
+.ComponentResult .resultHeadline {
+    border-bottom:2px solid black;
+    font-weight: bolder;
+}
+
+.ComponentResult .resultOverview {
+ width:80%;
+ margin: 0 auto;
+ margin-bottom: 25px;
+}
+
+.ComponentResult .resultOverview .resultCombind {
+    width:100%;
+    border: 2px solid black;
+    text-align: left;
+    margin-bottom:30px;
+
+
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(255,173,255,1);
+-moz-box-shadow: 0px 0px 52px 0px rgba(255,173,255,1);
+box-shadow: 0px 0px 52px 0px rgba(255,173,255,1);
+
+
+   }
+   
+   .ComponentResult .resultOverview .resultUniq {
+       display:flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+
+   
+   .ComponentResult .resultOverview .resultUniq div{
+    border: 2px solid black;
+    width:45%;
+    text-align: left;
+    margin:30px;
+
+
+   }
+
+   
+   .ComponentResult .resultOverview .resultUniq .resultFeeling{
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(255,171,171,1);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(255,171,171,1);
+    box-shadow: 0px 0px 52px 0px rgba(255,171,171,1);  
+   }
+   .ComponentResult .resultOverview .resultUniq .resultLogic{
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(173,177,255,1);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(173,177,255,1);
+    box-shadow: 0px 0px 52px 0px rgba(173,177,255,1);
+   }
+   .ComponentResult .resultOverview .resultUniq .resultFreedom{
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(173,255,185,1);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(173,255,185,1);
+    box-shadow: 0px 0px 52px 0px rgba(173,255,185,1);
+   }
+   .ComponentResult .resultOverview .resultUniq .resultContorl{
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(255,221,0,1);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(255,221,0,1);
+    box-shadow: 0px 0px 52px 0px rgba(255,221,0,1);
+   }
+
+  /* ------------------------------------------------Component Reset: */
+
+  .resetStyling{}
+
+  .resetStyling button{
+      width:15%;
+      height: 30px;
+      cursor: pointer;
+      transition: 0.5s;
+  }
+
+  .resetStyling button:hover{
+background-color: darkred;
+color:white;
+}
