@@ -55,7 +55,11 @@ render() {
     let pointCounterFreedom = this.props.qNumber.pointFreedom;
     let pointCounterControle = this.props.qNumber.pointControl;
 
+let buttonTekst = "answer"
 
+if((this.props.qNumber.timeInTest +1) === this.props.qList.length) {
+    buttonTekst = "Result"
+}
 
     return (
  
@@ -72,7 +76,7 @@ render() {
                     <div className="optionForm">
                 {shownOptions}
                 </div>
-                <button type="submit">Answer</button>
+                <button type="submit">{buttonTekst}</button>
                 </form>
                 </div>
 

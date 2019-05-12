@@ -10,14 +10,14 @@ let completeLogic = this.props.resultPoint.pointLogic
 let completeFreedom = this.props.resultPoint.pointFreedom
 let completeControl = this.props.resultPoint.pointControl
 
-let completeScore = completeFeeling + completeLogic + completeFeeling + completeControl
+let completeScore = completeFeeling + completeLogic + completeFreedom + completeControl
 
 //SET UP DESCRIPTIONS 
 
-let descriptionFeeling = "Feeling Description"
-let descriptionLogic = "Logic Description"
-let descriptionFreedom  = "Freedom Description"
-let descriptionControl = "Control Description"
+let descriptionFeeling = "Feeling Description: " + ((completeFeeling/completeScore) * 100) + "%";
+let descriptionLogic = "Logic Description: " + ((completeLogic/completeScore) * 100) + "%";
+let descriptionFreedom  = "Freedom Description: " + ((completeFreedom/completeScore) * 100) + "%";
+let descriptionControl = "Control Description: " + ((completeControl/completeScore) * 100) + "%";
 
 let descriptionProfile= "Profile Description"
 
@@ -27,6 +27,7 @@ let descriptionProfile= "Profile Description"
             
             <h2>Result:</h2>
 
+<p>OBS: This quize is not done, and is not balanced yet</p>
         <div className="resultOverview">
 
             <div className="resultCombind"> 

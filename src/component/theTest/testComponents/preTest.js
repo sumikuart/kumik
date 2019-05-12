@@ -8,7 +8,7 @@ render () {
 
     return(
         <div>
-            <h2>Welcome To the Kumik-Affection test.</h2>
+            <h2>Welcome To the Kumik-Affection test. v. 0.1.6.2 </h2>
             <p>This Test will measure how you'r affected by each of the four kumik gods. And how they think of you.</p>
             
 
@@ -23,7 +23,7 @@ render () {
                 <p className="moreInfo">For more info on kumik and the gods in general, look under <NavLink to="/lore">Lore</NavLink></p>
 
             <p className="italic">[how it works: you will be shown several questions, and statements. you need to click each checkbox that you can relate with. (you can click as many as you want, But each question need atleast one answer)]</p>
-
+            
             <form onSubmit={this.props.startVar}>
             <button type="submit" >Start</button>
             </form>
